@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4}];
+var items = [{"id":1,"group":1,"content":"feature\/CCE_TNandBAN[1.1:35]","start":1712264753180,"end":1712264753531,"title":"feature\/CCE_TNandBAN[1.1:35] 14:05:53.180-14:05:53.531 TC001_Get_CCE_tn_BAN_CustomerInfo fetched against TN and BAN combination for WLS Consumer"},{"id":2,"group":2,"content":"feature\/CCE_TNandBAN[2.1:48]","start":1712264753394,"end":1712264757098,"title":"feature\/CCE_TNandBAN[2.1:48] 14:05:53.394-14:05:57.098 TC002_Get_CCE_tn_BAN_WLN_Business_CustomerInfo fetched for WLN Biz account against TN and BAN combination"},{"id":3,"group":3,"content":"feature\/CCE_TNandBAN[3.1:61]","start":1712264753421,"end":1712264762628,"title":"feature\/CCE_TNandBAN[3.1:61] 14:05:53.421-14:06:02.628 TC003_Get_CCE_tn_BAN_WLS_Business_CustomerInfo fetched for WLS Biz account against TN and BAN combination"},{"id":4,"group":4,"content":"feature\/CCE_TNandBAN[4.1:75]","start":1712264753505,"end":1712264753949,"title":"feature\/CCE_TNandBAN[4.1:75] 14:05:53.505-14:05:53.949 TC004_Get_CCE_tn_BAN_kb_corp_CustomerInfo fetched for a WLS Corp account against TN and BAN combination"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

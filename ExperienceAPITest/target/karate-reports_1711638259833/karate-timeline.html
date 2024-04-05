@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4},{"content":"pool-1-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"feature\/CCE_BAN[1.1:32]","start":1711638108191,"end":1711638108732,"title":"feature\/CCE_BAN[1.1:32] 08:01:48.191-08:01:48.732 TC001_Get_CCE_Ban_Info"},{"id":2,"group":2,"content":"feature\/CCE_BAN[1.2:32]","start":1711638108188,"end":1711638108679,"title":"feature\/CCE_BAN[1.2:32] 08:01:48.188-08:01:48.679 TC001_Get_CCE_Ban_Info"},{"id":3,"group":3,"content":"feature\/CCE_BAN[1.3:32]","start":1711638108199,"end":1711638108639,"title":"feature\/CCE_BAN[1.3:32] 08:01:48.199-08:01:48.639 TC001_Get_CCE_Ban_Info"},{"id":4,"group":4,"content":"feature\/CCE_BAN[1.4:32]","start":1711638108192,"end":1711638108576,"title":"feature\/CCE_BAN[1.4:32] 08:01:48.192-08:01:48.576 TC001_Get_CCE_Ban_Info"},{"id":5,"group":5,"content":"feature\/CCE_BAN[1.5:32]","start":1711638108182,"end":1711638108739,"title":"feature\/CCE_BAN[1.5:32] 08:01:48.182-08:01:48.739 TC001_Get_CCE_Ban_Info"},{"id":6,"group":4,"content":"feature\/CCE_BAN[2.1:43]","start":1711638108591,"end":1711638108806,"title":"feature\/CCE_BAN[2.1:43] 08:01:48.591-08:01:48.806 TC003_Get_CCE_Ban_Cods_customer_Business_Info","className":"failed"},{"id":7,"group":3,"content":"feature\/CCE_BAN[3.1:54]","start":1711638108661,"end":1711638108920,"title":"feature\/CCE_BAN[3.1:54] 08:01:48.661-08:01:48.920 TC003_Get_CCE_Ban_kb_customer_Business_Info","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

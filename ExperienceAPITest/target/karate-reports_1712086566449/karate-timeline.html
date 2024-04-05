@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3}];
+var items = [{"id":1,"group":1,"content":"feature\/CCE_Corporate_BAN[1.1:34]","start":1712086408198,"end":1712086408525,"title":"feature\/CCE_Corporate_BAN[1.1:34] 12:33:28.198-12:33:28.525 TC001_Get_CCE_Ban_Info"},{"id":2,"group":2,"content":"feature\/CCE_Corporate_BAN[2.1:47]","start":1712086408262,"end":1712086408533,"title":"feature\/CCE_Corporate_BAN[2.1:47] 12:33:28.262-12:33:28.533 TC002_Get_CCE_Ban_Suspended_Info"},{"id":3,"group":3,"content":"feature\/CCE_Corporate_BAN[3.1:62]","start":1712086408326,"end":1712086408563,"title":"feature\/CCE_Corporate_BAN[3.1:62] 12:33:28.326-12:33:28.563 TC002_Get_CCE_Ban_kb_corp_Cancelled_Info","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

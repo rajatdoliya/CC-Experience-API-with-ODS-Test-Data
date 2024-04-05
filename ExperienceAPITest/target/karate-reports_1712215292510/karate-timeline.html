@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4},{"content":"pool-1-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"feature\/Tn_business[1.1:33]","start":1712214930092,"end":1712214930436,"title":"feature\/Tn_business[1.1:33] 00:15:30.092-00:15:30.436 TC001_CCCI_API_GET_Business_TN_BU R Accounts_200"},{"id":2,"group":2,"content":"feature\/Tn_business[2.1:47]","start":1712214930169,"end":1712214930621,"title":"feature\/Tn_business[2.1:47] 00:15:30.169-00:15:30.621 TC002_CCCI_API_GET_WLS_Business_TN_status_active_BizUnit_B Accounts_200"},{"id":3,"group":3,"content":"feature\/Tn_business[3.1:71]","start":1712214930281,"end":1712214930755,"title":"feature\/Tn_business[3.1:71] 00:15:30.281-00:15:30.755 TC003_CCCI_API_GET_Business_status_suspended_200"},{"id":4,"group":4,"content":"feature\/Tn_business[4.1:86]","start":1712214930335,"end":1712214930793,"title":"feature\/Tn_business[4.1:86] 00:15:30.335-00:15:30.793 TC004_CCCI_API_GET_Business_accountsandproducts_200","className":"failed"},{"id":5,"group":5,"content":"feature\/Tn_business[5.1:98]","start":1712214930435,"end":1712214930905,"title":"feature\/Tn_business[5.1:98] 00:15:30.435-00:15:30.905 TC005_CCCI_API_GET_Business_morethan3Accounts_200"},{"id":6,"group":1,"content":"feature\/Tn_business[6.1:111]","start":1712214930448,"end":1712214930673,"title":"feature\/Tn_business[6.1:111] 00:15:30.448-00:15:30.673 TC006_CCCI_API_GET_Cods_WLN_Business_customeraccount_200"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>

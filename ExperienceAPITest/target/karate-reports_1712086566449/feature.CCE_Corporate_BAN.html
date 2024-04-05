@@ -1,0 +1,1754 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <link rel="stylesheet" href="res/bootstrap.min.css" type="text/css"/>
+    <link rel="stylesheet" href="res/karate-report.css" type="text/css"/>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <script type="text/javascript" src="res/jquery.min.js"></script>
+    <script type="text/javascript" src="res/jquery.tablesorter.min.js"></script>
+    <script type="text/javascript" src="res/bootstrap.min.js"></script>
+    <script type="text/javascript" src="res/karate-report.js"></script>
+    <title>feature.CCE_Corporate_BAN</title>  
+  </head>
+  <body>   
+    <div id="root-container">
+      <div id="leftnav">
+                
+        <div>
+  <div class="nav-logo">
+    <a href="karate-summary.html">
+      <img src="karate-logo.svg" alt="Karate"/>
+    </a>
+    <div class="nav-count">
+      <div id="nav-pass" class="bg-success">2</div>
+      <div id="nav-fail" class="bg-danger">1</div>
+    </div>
+  </div>
+  <div id="nav-type">
+    <div>Scenarios</div>
+  </div>         
+  <div id="nav-date">
+    <div>2024-04-02 12:33:28 PM</div>
+  </div>        
+</div>
+
+        <div class="nav-container">
+          <div class="nav-item passed">
+            <a href="#[1.1:34]"><span>[1.1:34]</span> <span>TC001_Get_CCE_Ban_Info</span></a>
+          </div>
+          <div class="nav-item passed">
+            <a href="#[2.1:47]"><span>[2.1:47]</span> <span>TC002_Get_CCE_Ban_Suspended_Info</span></a>
+          </div>
+          <div class="nav-item failed">
+            <a href="#[3.1:62]"><span>[3.1:62]</span> <span>TC002_Get_CCE_Ban_kb_corp_Cancelled_Info</span></a>
+          </div>
+        </div>
+      </div>
+      <div id="content">
+        <div class="page-heading alert alert-primary">
+          <a href="karate-summary.html">Summary</a><span class="feature-label">|</span>
+          <a href="karate-tags.html">Tags</a><span class="feature-label">|</span>
+          <span class="feature-label">Feature:</span>
+          <span class="feature-path">feature/CCE_Corporate_BAN.feature</span><span class="feature-label">|</span>
+          <span class="feature-name">Validate the response for different bans</span>
+          <span class="feature-description"></span>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[1.1:34]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[1.1:34]</span>
+                <span class="scenario-name">TC001_Get_CCE_Ban_Info</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>295</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[1.1:34]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[1.1:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.8">12:33:28.210 karate.env system property was: it01 
+12:33:28.211 clientId:52e80bfa-b42c-47d7-98b5-8bb87c926209 
+12:33:28.212 clientSecret:3ad8873a-4723-46ba-9989-afaec288f5d104c2d7ff-9d6b-48c1-a9ff-6502d4808fee 
+12:33:28.220 Current URL is : https://apigw-st.tsl.telus.com 
+12:33:28.221 Current Env is : it01 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure ssl = true</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header accept = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.11">
+      <div class="step-ref bg-step">11</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header env = env</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.12">
+      <div class="step-ref bg-step">12</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure readTimeout = 20000</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.13">
+      <div class="step-ref bg-step">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer &#39;+authInfo.response.access_token;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:34]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print authInfo.response.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.14">12:33:28.244 [print] eyJhbGciOiJSUzI1NiIsImtpZCI6ImNhZGZhMTYyLTU2YzEtNGRiOS1hNjNmLTYwZTM3NzIwMWJkZiIsInBpLmF0bSI6IjMifQ.eyJzY29wZSI6WyIxOTg3IiwiMzk4NyJdLCJhdXRob3JpemF0aW9uX2RldGFpbHMiOltdLCJjbGllbnRfaWQiOiI1MmU4MGJmYS1iNDJjLTQ3ZDctOThiNS04YmI4N2M5MjYyMDkiLCJpc3MiOiJodHRwczovL3RlYW1zc28taXRzMDQudGVsdXMuY29tIiwiYXVkIjoia29uZyIsImlhdCI6MTcxMjA4NjQwNywiZXhwIjoxNzEyMDg2NzA3fQ.SYUykF79k_nwsYkpl0itCjo-5rLcR6ucckFNXEI53W5Ozcljx4NqXxEVUKuYrFvcCys5n1hboF1v5B_pyEp-Lz_UuY7hcfCXeywhVvTmwwYhg387dnIKZwcFG6Eep_EifuickxZLjHaJ4Kw3fPEr-5GldYaxgE2CwdlvIK38-a7jySshpZPUypbLrWraY0VnPnzR8hfcZjjWJMouniESmwzDtx4z4Ij13alHFK_1sknbP9MadB9v-NsGRG8zu1G2wqk_HV5QeQZY-ZcRRO4on_7qHQv1LvDU-Yh62pvxOJXJUWVFtI3hYZHRiYVcy8LM2n_2vlEUXU5OJF7aDDhSJg 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:34]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#* def data_file = &#39;ban_Corporate_feature_data_&#39;+env+&#39;.json&#39;</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="1.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def mockResponseWLS_CORP_ACTIVE = callonce read(&quot;../data/getTestData_CCE_CORP_BAN_IT01.feature@getdataCorpActive&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:34]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#* def data_file1 = &#39;ban_Corporate_feature_Suspended_data_&#39;+env+&#39;.json&#39;</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="1.18">
+      <div class="step-ref bg-step">18</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def mockResponseWLS_CORP_SUSPENDED = callonce read(&quot;../data/getTestData_CCE_CORP_BAN_IT01.feature@getdataCorpSuspended&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[1.1:34]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#* def data_file2 = &#39;ban_kb_corp_customer-account_data_&#39;+env+&#39;.json&#39;</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="1.20">
+      <div class="step-ref bg-step">20</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def mockResponseWLS_CORP_CANCELLED = callonce read(&quot;../data/getTestData_CCE_CORP_BAN_IT01.feature@getdataCorpCancelled&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.24">
+      <div class="step-ref passed">24</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;customer/contactCenterCustomerInfo/v1/account&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.25">
+      <div class="step-ref passed">25</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param ban = &#39;70940610&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.26">
+      <div class="step-ref passed">26</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">203</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.26">12:33:28.279 request:
+1 &gt; GET https://apigw-st.tsl.telus.com/customer/contactCenterCustomerInfo/v1/account?ban=70940610
+1 &gt; accept: application/json
+1 &gt; env: it01
+1 &gt; Authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImNhZGZhMTYyLTU2YzEtNGRiOS1hNjNmLTYwZTM3NzIwMWJkZiIsInBpLmF0bSI6IjMifQ.eyJzY29wZSI6WyIxOTg3IiwiMzk4NyJdLCJhdXRob3JpemF0aW9uX2RldGFpbHMiOltdLCJjbGllbnRfaWQiOiI1MmU4MGJmYS1iNDJjLTQ3ZDctOThiNS04YmI4N2M5MjYyMDkiLCJpc3MiOiJodHRwczovL3RlYW1zc28taXRzMDQudGVsdXMuY29tIiwiYXVkIjoia29uZyIsImlhdCI6MTcxMjA4NjQwNywiZXhwIjoxNzEyMDg2NzA3fQ.SYUykF79k_nwsYkpl0itCjo-5rLcR6ucckFNXEI53W5Ozcljx4NqXxEVUKuYrFvcCys5n1hboF1v5B_pyEp-Lz_UuY7hcfCXeywhVvTmwwYhg387dnIKZwcFG6Eep_EifuickxZLjHaJ4Kw3fPEr-5GldYaxgE2CwdlvIK38-a7jySshpZPUypbLrWraY0VnPnzR8hfcZjjWJMouniESmwzDtx4z4Ij13alHFK_1sknbP9MadB9v-NsGRG8zu1G2wqk_HV5QeQZY-ZcRRO4on_7qHQv1LvDU-Yh62pvxOJXJUWVFtI3hYZHRiYVcy8LM2n_2vlEUXU5OJF7aDDhSJg
+1 &gt; Host: apigw-st.tsl.telus.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:33:28.466 response time in milliseconds: 187
+1 &lt; 200
+1 &lt; Content-Type: application/json;charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-xss-protection: 1; mode=block
+1 &lt; cache-control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; pragma: no-cache
+1 &lt; expires: 0
+1 &lt; strict-transport-security: max-age=31536000 ; includeSubDomains
+1 &lt; x-frame-options: DENY
+1 &lt; date: Tue, 02 Apr 2024 19:33:28 GMT
+1 &lt; kong-request-id: a4a749e9-9ad4-4f7b-bda7-c947dd1e654d#82914
+1 &lt; vary: Origin
+1 &lt; vary: Origin
+1 &lt; x-kong-upstream-latency: 77
+1 &lt; x-kong-proxy-latency: 3
+1 &lt; via: kong/2.8.2.3-enterprise-edition
+{&quot;searchType&quot;:&quot;BAN&quot;,&quot;searchValue&quot;:&quot;ban=70940610&quot;,&quot;accountList&quot;:[{&quot;customerId&quot;:null,&quot;foundByContactSearch&quot;:false,&quot;accountMatchAccuracy&quot;:100,&quot;billingName&quot;:{&quot;firstName&quot;:null,&quot;lastName&quot;:&quot;TELUS&quot;,&quot;middleInitial&quot;:null},&quot;billingAccountNum&quot;:&quot;70940610&quot;,&quot;checkDigit&quot;:&quot;NA&quot;,&quot;state&quot;:&quot;active&quot;,&quot;domain&quot;:&quot;wireless&quot;,&quot;accountTypeCd&quot;:&quot;C&quot;,&quot;accountSubTypeCd&quot;:&quot;X&quot;,&quot;currentBalance&quot;:0.0,&quot;brand&quot;:&quot;telus&quot;,&quot;businessUnit&quot;:&quot;corp&quot;,&quot;accountTags&quot;:[],&quot;banSegmentCd&quot;:&quot;TBSA&quot;,&quot;banSubSegmentCd&quot;:&quot;BPR&quot;,&quot;creditClass&quot;:null,&quot;statusActivityReasonCd&quot;:&quot;CA&quot;,&quot;hotlineInd&quot;:false,&quot;delinquentInd&quot;:false,&quot;riskIndicatorCode&quot;:null,&quot;customerValueSegment&quot;:&quot;NA&quot;,&quot;languageCd&quot;:&quot;EN&quot;,&quot;billingType&quot;:&quot;postpaid&quot;,&quot;collectionStatusCd&quot;:null,&quot;accountStatusDt&quot;:&quot;2020-08-14T06:00:00Z&quot;,&quot;accountStartDt&quot;:&quot;2020-08-14T06:00:00Z&quot;,&quot;pin&quot;:&quot;8269&quot;,&quot;paymentMethodInfo&quot;:{&quot;paymentMethodCd&quot;:&quot;R&quot;,&quot;creditCardTypeCd&quot;:null,&quot;creditCardFirst6Txt&quot;:null,&quot;creditCardLast4Txt&quot;:null,&quot;creditCardMonthTxt&quot;:null,&quot;creditCardYearTxt&quot;:null,&quot;bankCodeTxt&quot;:null,&quot;bankAccountTxt&quot;:null,&quot;bankTransitNumTxt&quot;:null},&quot;billingInfo&quot;:{&quot;endDt&quot;:null,&quot;startDt&quot;:null,&quot;daysElapsed&quot;:0,&quot;daysInCycle&quot;:0,&quot;billCycleCd&quot;:&quot;3&quot;,&quot;ebillNotifyMethod&quot;:&quot;9&quot;,&quot;ebillNotifyPhoneNum&quot;:&quot;NA&quot;,&quot;ebillNotifyEmail&quot;:&quot;NA&quot;},&quot;billingAddress&quot;:null,&quot;contactInfo&quot;:{&quot;emailList&quot;:[&quot;Pavan.V@telus.com&quot;],&quot;phoneNumberInfoList&quot;:[{&quot;type&quot;:&quot;HOME&quot;,&quot;phoneNum&quot;:null},{&quot;type&quot;:&quot;CONTACT&quot;,&quot;phoneNum&quot;:&quot;4373532244&quot;},{&quot;type&quot;:&quot;BUSINESS&quot;,&quot;phoneNum&quot;:&quot;4373532244&quot;}]},&quot;activeSubscriberCt&quot;:1,&quot;suspendedSubscriberCt&quot;:0,&quot;cancelledSubscriberCt&quot;:0,&quot;productSearchStatus&quot;:&quot;notDone&quot;,&quot;products&quot;:null}],&quot;wirelessAccountFound&quot;:true,&quot;homeAccountFound&quot;:false,&quot;securityAccountFound&quot;:false,&quot;telusQuebecAccountFound&quot;:false,&quot;hasMultipleAccountOrSubscriber&quot;:false,&quot;hasResidentialAndBusinessAccount&quot;:false}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.27">
+      <div class="step-ref passed">27</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.28">
+      <div class="step-ref passed">28</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.accountList[*].billingType == [&quot;postpaid&quot;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">51</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.29">
+      <div class="step-ref passed">29</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.accountList[*].accountTypeCd == [&quot;C&quot;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.30">
+      <div class="step-ref passed">30</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print mockResponseWLS_CORP_ACTIVE</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.30">12:33:28.525 [print] {
+  &quot;responseHeaders&quot;: {
+    &quot;Content-Type&quot;: [
+      &quot;application/json;charset=utf-8&quot;
+    ],
+    &quot;Transfer-Encoding&quot;: [
+      &quot;chunked&quot;
+    ],
+    &quot;Connection&quot;: [
+      &quot;keep-alive&quot;
+    ],
+    &quot;x-content-type-options&quot;: [
+      &quot;nosniff&quot;
+    ],
+    &quot;x-xss-protection&quot;: [
+      &quot;1; mode=block&quot;
+    ],
+    &quot;cache-control&quot;: [
+      &quot;no-cache, no-store, max-age=0, must-revalidate&quot;
+    ],
+    &quot;pragma&quot;: [
+      &quot;no-cache&quot;
+    ],
+    &quot;expires&quot;: [
+      &quot;0&quot;
+    ],
+    &quot;strict-transport-security&quot;: [
+      &quot;max-age=31536000 ; includeSubDomains&quot;
+    ],
+    &quot;x-frame-options&quot;: [
+      &quot;DENY&quot;
+    ],
+    &quot;date&quot;: [
+      &quot;Tue, 02 Apr 2024 19:33:27 GMT&quot;
+    ],
+    &quot;kong-request-id&quot;: [
+      &quot;23f3457a-fb48-4946-8409-a2211b8d6370#732&quot;
+    ],
+    &quot;vary&quot;: [
+      &quot;Origin&quot;,
+      &quot;Origin&quot;
+    ],
+    &quot;x-kong-upstream-latency&quot;: [
+      &quot;112&quot;
+    ],
+    &quot;x-kong-proxy-latency&quot;: [
+      &quot;4&quot;
+    ],
+    &quot;via&quot;: [
+      &quot;kong/2.8.2.3-enterprise-edition&quot;
+    ]
+  },
+  &quot;responseStatus&quot;: 200,
+  &quot;response&quot;: [
+    {
+      &quot;ban&quot;: &quot;70940610&quot;,
+      &quot;tn&quot;: &quot;4161442309&quot;
+    }
+  ],
+  &quot;mockResponseWLS_CORP_ACTIVE&quot;: &quot;#ref:net.minidev.json.JSONArray&quot;
+}
+ 
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[2.1:47]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[2.1:47]</span>
+                <span class="scenario-name">TC002_Get_CCE_Ban_Suspended_Info</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time passed">
+              <span>ms:</span>&nbsp;<span>235</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[2.1:47]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[2.1:47]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.8">12:33:28.279 karate.env system property was: it01 
+12:33:28.280 clientId:52e80bfa-b42c-47d7-98b5-8bb87c926209 
+12:33:28.281 clientSecret:3ad8873a-4723-46ba-9989-afaec288f5d104c2d7ff-9d6b-48c1-a9ff-6502d4808fee 
+12:33:28.287 Current URL is : https://apigw-st.tsl.telus.com 
+12:33:28.288 Current Env is : it01 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2.1:47]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure ssl = true</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2.1:47]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header accept = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2.1:47]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.11">
+      <div class="step-ref bg-step">11</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header env = env</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2.1:47]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.12">
+      <div class="step-ref bg-step">12</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure readTimeout = 20000</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2.1:47]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.13">
+      <div class="step-ref bg-step">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer &#39;+authInfo.response.access_token;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2.1:47]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print authInfo.response.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.14">12:33:28.310 [print] eyJhbGciOiJSUzI1NiIsImtpZCI6ImNhZGZhMTYyLTU2YzEtNGRiOS1hNjNmLTYwZTM3NzIwMWJkZiIsInBpLmF0bSI6IjMifQ.eyJzY29wZSI6WyIxOTg3IiwiMzk4NyJdLCJhdXRob3JpemF0aW9uX2RldGFpbHMiOltdLCJjbGllbnRfaWQiOiI1MmU4MGJmYS1iNDJjLTQ3ZDctOThiNS04YmI4N2M5MjYyMDkiLCJpc3MiOiJodHRwczovL3RlYW1zc28taXRzMDQudGVsdXMuY29tIiwiYXVkIjoia29uZyIsImlhdCI6MTcxMjA4NjQwNywiZXhwIjoxNzEyMDg2NzA3fQ.SYUykF79k_nwsYkpl0itCjo-5rLcR6ucckFNXEI53W5Ozcljx4NqXxEVUKuYrFvcCys5n1hboF1v5B_pyEp-Lz_UuY7hcfCXeywhVvTmwwYhg387dnIKZwcFG6Eep_EifuickxZLjHaJ4Kw3fPEr-5GldYaxgE2CwdlvIK38-a7jySshpZPUypbLrWraY0VnPnzR8hfcZjjWJMouniESmwzDtx4z4Ij13alHFK_1sknbP9MadB9v-NsGRG8zu1G2wqk_HV5QeQZY-ZcRRO4on_7qHQv1LvDU-Yh62pvxOJXJUWVFtI3hYZHRiYVcy8LM2n_2vlEUXU5OJF7aDDhSJg 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[2.1:47]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#* def data_file = &#39;ban_Corporate_feature_data_&#39;+env+&#39;.json&#39;</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="1.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def mockResponseWLS_CORP_ACTIVE = callonce read(&quot;../data/getTestData_CCE_CORP_BAN_IT01.feature@getdataCorpActive&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">15</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2.1:47]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#* def data_file1 = &#39;ban_Corporate_feature_Suspended_data_&#39;+env+&#39;.json&#39;</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="1.18">
+      <div class="step-ref bg-step">18</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def mockResponseWLS_CORP_SUSPENDED = callonce read(&quot;../data/getTestData_CCE_CORP_BAN_IT01.feature@getdataCorpSuspended&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[2.1:47]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#* def data_file2 = &#39;ban_kb_corp_customer-account_data_&#39;+env+&#39;.json&#39;</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="1.20">
+      <div class="step-ref bg-step">20</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def mockResponseWLS_CORP_CANCELLED = callonce read(&quot;../data/getTestData_CCE_CORP_BAN_IT01.feature@getdataCorpCancelled&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">14</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.37">
+      <div class="step-ref passed">37</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;customer/contactCenterCustomerInfo/v1/account&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.38">
+      <div class="step-ref passed">38</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param ban = &#39;70599906&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.39">
+      <div class="step-ref passed">39</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">181</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.39">12:33:28.357 request:
+1 &gt; GET https://apigw-st.tsl.telus.com/customer/contactCenterCustomerInfo/v1/account?ban=70599906
+1 &gt; accept: application/json
+1 &gt; env: it01
+1 &gt; Authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImNhZGZhMTYyLTU2YzEtNGRiOS1hNjNmLTYwZTM3NzIwMWJkZiIsInBpLmF0bSI6IjMifQ.eyJzY29wZSI6WyIxOTg3IiwiMzk4NyJdLCJhdXRob3JpemF0aW9uX2RldGFpbHMiOltdLCJjbGllbnRfaWQiOiI1MmU4MGJmYS1iNDJjLTQ3ZDctOThiNS04YmI4N2M5MjYyMDkiLCJpc3MiOiJodHRwczovL3RlYW1zc28taXRzMDQudGVsdXMuY29tIiwiYXVkIjoia29uZyIsImlhdCI6MTcxMjA4NjQwNywiZXhwIjoxNzEyMDg2NzA3fQ.SYUykF79k_nwsYkpl0itCjo-5rLcR6ucckFNXEI53W5Ozcljx4NqXxEVUKuYrFvcCys5n1hboF1v5B_pyEp-Lz_UuY7hcfCXeywhVvTmwwYhg387dnIKZwcFG6Eep_EifuickxZLjHaJ4Kw3fPEr-5GldYaxgE2CwdlvIK38-a7jySshpZPUypbLrWraY0VnPnzR8hfcZjjWJMouniESmwzDtx4z4Ij13alHFK_1sknbP9MadB9v-NsGRG8zu1G2wqk_HV5QeQZY-ZcRRO4on_7qHQv1LvDU-Yh62pvxOJXJUWVFtI3hYZHRiYVcy8LM2n_2vlEUXU5OJF7aDDhSJg
+1 &gt; Host: apigw-st.tsl.telus.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:33:28.529 response time in milliseconds: 172
+1 &lt; 200
+1 &lt; Content-Type: application/json;charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-xss-protection: 1; mode=block
+1 &lt; cache-control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; pragma: no-cache
+1 &lt; expires: 0
+1 &lt; strict-transport-security: max-age=31536000 ; includeSubDomains
+1 &lt; x-frame-options: DENY
+1 &lt; date: Tue, 02 Apr 2024 19:33:28 GMT
+1 &lt; kong-request-id: 3fca8333-cf32-46bc-a21c-3b1368d54736#974
+1 &lt; vary: Origin
+1 &lt; vary: Origin
+1 &lt; x-kong-upstream-latency: 68
+1 &lt; x-kong-proxy-latency: 1
+1 &lt; via: kong/2.8.2.3-enterprise-edition
+{&quot;searchType&quot;:&quot;BAN&quot;,&quot;searchValue&quot;:&quot;ban=70599906&quot;,&quot;accountList&quot;:[{&quot;customerId&quot;:null,&quot;foundByContactSearch&quot;:false,&quot;accountMatchAccuracy&quot;:100,&quot;billingName&quot;:{&quot;firstName&quot;:null,&quot;lastName&quot;:&quot;BUSINESSNAME&quot;,&quot;middleInitial&quot;:null},&quot;billingAccountNum&quot;:&quot;70599906&quot;,&quot;checkDigit&quot;:&quot;NA&quot;,&quot;state&quot;:&quot;suspended&quot;,&quot;domain&quot;:&quot;wireless&quot;,&quot;accountTypeCd&quot;:&quot;C&quot;,&quot;accountSubTypeCd&quot;:&quot;X&quot;,&quot;currentBalance&quot;:0.0,&quot;brand&quot;:&quot;telus&quot;,&quot;businessUnit&quot;:&quot;corp&quot;,&quot;accountTags&quot;:[],&quot;banSegmentCd&quot;:&quot;TBSO&quot;,&quot;banSubSegmentCd&quot;:&quot;BPR&quot;,&quot;creditClass&quot;:null,&quot;statusActivityReasonCd&quot;:&quot;AIE&quot;,&quot;hotlineInd&quot;:false,&quot;delinquentInd&quot;:false,&quot;riskIndicatorCode&quot;:null,&quot;customerValueSegment&quot;:&quot;NA&quot;,&quot;languageCd&quot;:&quot;EN&quot;,&quot;billingType&quot;:&quot;postpaid&quot;,&quot;collectionStatusCd&quot;:null,&quot;accountStatusDt&quot;:&quot;2010-10-05T06:00:00Z&quot;,&quot;accountStartDt&quot;:&quot;2010-10-04T06:00:00Z&quot;,&quot;pin&quot;:&quot;1234&quot;,&quot;paymentMethodInfo&quot;:{&quot;paymentMethodCd&quot;:&quot;R&quot;,&quot;creditCardTypeCd&quot;:null,&quot;creditCardFirst6Txt&quot;:null,&quot;creditCardLast4Txt&quot;:null,&quot;creditCardMonthTxt&quot;:null,&quot;creditCardYearTxt&quot;:null,&quot;bankCodeTxt&quot;:null,&quot;bankAccountTxt&quot;:null,&quot;bankTransitNumTxt&quot;:null},&quot;billingInfo&quot;:{&quot;endDt&quot;:null,&quot;startDt&quot;:null,&quot;daysElapsed&quot;:0,&quot;daysInCycle&quot;:0,&quot;billCycleCd&quot;:&quot;1&quot;,&quot;ebillNotifyMethod&quot;:&quot;1&quot;,&quot;ebillNotifyPhoneNum&quot;:&quot;NA&quot;,&quot;ebillNotifyEmail&quot;:&quot;NA&quot;},&quot;billingAddress&quot;:null,&quot;contactInfo&quot;:{&quot;emailList&quot;:[&quot;test@telus.com&quot;],&quot;phoneNumberInfoList&quot;:[{&quot;type&quot;:&quot;HOME&quot;,&quot;phoneNum&quot;:null},{&quot;type&quot;:&quot;CONTACT&quot;,&quot;phoneNum&quot;:&quot;4031612476&quot;},{&quot;type&quot;:&quot;BUSINESS&quot;,&quot;phoneNum&quot;:&quot;4031612476&quot;}]},&quot;activeSubscriberCt&quot;:0,&quot;suspendedSubscriberCt&quot;:1,&quot;cancelledSubscriberCt&quot;:0,&quot;productSearchStatus&quot;:&quot;notDone&quot;,&quot;products&quot;:null}],&quot;wirelessAccountFound&quot;:true,&quot;homeAccountFound&quot;:false,&quot;securityAccountFound&quot;:false,&quot;telusQuebecAccountFound&quot;:false,&quot;hasMultipleAccountOrSubscriber&quot;:false,&quot;hasResidentialAndBusinessAccount&quot;:false}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.40">
+      <div class="step-ref passed">40</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.42">
+      <div class="step-ref passed">42</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.accountList[*].accountTypeCd == [&quot;C&quot;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.43">
+      <div class="step-ref passed">43</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.accountList[*].state == [&quot;suspended&quot;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+        </div>
+        <div class="scenario">
+          <div class="scenario-heading" id="[3.1:62]">
+            <div class="heading-container">
+              <div class="scenario-tags">
+                
+              </div>
+              <div class="scenario-keyword">
+                Scenario: <span>[3.1:62]</span>
+                <span class="scenario-name">TC002_Get_CCE_Ban_kb_corp_Cancelled_Info</span>
+                <span></span>
+              </div>
+            </div>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>196</span>
+            </div>
+          </div>
+          <div class="step-row">
+            <div class="step-container" id="[3.1:62]bg">
+              <div class="step-ref bg-step">&gt;&gt;</div>
+              <div class="step-cell passed">Background:</div>
+            </div>
+            <div class="time-cell passed"></div>
+          </div>
+          <div data-parent="[3.1:62]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.8">
+      <div class="step-ref bg-step">8</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>url baseURL</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.8">12:33:28.345 karate.env system property was: it01 
+12:33:28.345 clientId:52e80bfa-b42c-47d7-98b5-8bb87c926209 
+12:33:28.346 clientSecret:3ad8873a-4723-46ba-9989-afaec288f5d104c2d7ff-9d6b-48c1-a9ff-6502d4808fee 
+12:33:28.357 Current URL is : https://apigw-st.tsl.telus.com 
+12:33:28.359 Current Env is : it01 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[3.1:62]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.9">
+      <div class="step-ref bg-step">9</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure ssl = true</span>
+      </div>
+    </div>
+    <div class="time-cell passed">3</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3.1:62]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.10">
+      <div class="step-ref bg-step">10</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header accept = &#39;application/json&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3.1:62]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.11">
+      <div class="step-ref bg-step">11</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header env = env</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3.1:62]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.12">
+      <div class="step-ref bg-step">12</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>configure readTimeout = 20000</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3.1:62]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.13">
+      <div class="step-ref bg-step">13</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>header Authorization = &#39;Bearer &#39;+authInfo.response.access_token;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3.1:62]bg"><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.14">
+      <div class="step-ref bg-step">14</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>print authInfo.response.access_token</span>
+      </div>
+    </div>
+    <div class="time-cell passed">6</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.14">12:33:28.385 [print] eyJhbGciOiJSUzI1NiIsImtpZCI6ImNhZGZhMTYyLTU2YzEtNGRiOS1hNjNmLTYwZTM3NzIwMWJkZiIsInBpLmF0bSI6IjMifQ.eyJzY29wZSI6WyIxOTg3IiwiMzk4NyJdLCJhdXRob3JpemF0aW9uX2RldGFpbHMiOltdLCJjbGllbnRfaWQiOiI1MmU4MGJmYS1iNDJjLTQ3ZDctOThiNS04YmI4N2M5MjYyMDkiLCJpc3MiOiJodHRwczovL3RlYW1zc28taXRzMDQudGVsdXMuY29tIiwiYXVkIjoia29uZyIsImlhdCI6MTcxMjA4NjQwNywiZXhwIjoxNzEyMDg2NzA3fQ.SYUykF79k_nwsYkpl0itCjo-5rLcR6ucckFNXEI53W5Ozcljx4NqXxEVUKuYrFvcCys5n1hboF1v5B_pyEp-Lz_UuY7hcfCXeywhVvTmwwYhg387dnIKZwcFG6Eep_EifuickxZLjHaJ4Kw3fPEr-5GldYaxgE2CwdlvIK38-a7jySshpZPUypbLrWraY0VnPnzR8hfcZjjWJMouniESmwzDtx4z4Ij13alHFK_1sknbP9MadB9v-NsGRG8zu1G2wqk_HV5QeQZY-ZcRRO4on_7qHQv1LvDU-Yh62pvxOJXJUWVFtI3hYZHRiYVcy8LM2n_2vlEUXU5OJF7aDDhSJg 
+</div>   
+
+  
+
+</div>
+</div>
+          <div data-parent="[3.1:62]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#* def data_file = &#39;ban_Corporate_feature_data_&#39;+env+&#39;.json&#39;</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="1.16">
+      <div class="step-ref bg-step">16</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def mockResponseWLS_CORP_ACTIVE = callonce read(&quot;../data/getTestData_CCE_CORP_BAN_IT01.feature@getdataCorpActive&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">7</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3.1:62]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#* def data_file1 = &#39;ban_Corporate_feature_Suspended_data_&#39;+env+&#39;.json&#39;</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="1.18">
+      <div class="step-ref bg-step">18</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def mockResponseWLS_CORP_SUSPENDED = callonce read(&quot;../data/getTestData_CCE_CORP_BAN_IT01.feature@getdataCorpSuspended&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">4</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div data-parent="[3.1:62]bg"><div>
+  
+
+  <div class="step-row">
+    <div class="step-container">
+      <div class="step-ref passed"></div>
+      
+      <div class="step-cell comment">#* def data_file2 = &#39;ban_kb_corp_customer-account_data_&#39;+env+&#39;.json&#39;</div>
+    </div>
+    <div class="time-cell comment"></div>            
+  </div>
+
+  <div class="step-row">
+    <div class="step-container" id="1.20">
+      <div class="step-ref bg-step">20</div>
+      
+      <div class="step-cell passed">
+        <span>*</span>&nbsp;<span>def mockResponseWLS_CORP_CANCELLED = callonce read(&quot;../data/getTestData_CCE_CORP_BAN_IT01.feature@getdataCorpCancelled&quot;)</span>
+      </div>
+    </div>
+    <div class="time-cell passed">5</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.52">
+      <div class="step-ref passed">52</div>
+      
+      <div class="step-cell passed">
+        <span>Given</span>&nbsp;<span>path &#39;customer/contactCenterCustomerInfo/v1/account&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.53">
+      <div class="step-ref passed">53</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>param ban = &#39;71011963&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.54">
+      <div class="step-ref passed">54</div>
+      
+      <div class="step-cell passed">
+        <span>When</span>&nbsp;<span>method get</span>
+      </div>
+    </div>
+    <div class="time-cell passed">152</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.54">12:33:28.414 request:
+1 &gt; GET https://apigw-st.tsl.telus.com/customer/contactCenterCustomerInfo/v1/account?ban=71011963
+1 &gt; accept: application/json
+1 &gt; env: it01
+1 &gt; Authorization: Bearer eyJhbGciOiJSUzI1NiIsImtpZCI6ImNhZGZhMTYyLTU2YzEtNGRiOS1hNjNmLTYwZTM3NzIwMWJkZiIsInBpLmF0bSI6IjMifQ.eyJzY29wZSI6WyIxOTg3IiwiMzk4NyJdLCJhdXRob3JpemF0aW9uX2RldGFpbHMiOltdLCJjbGllbnRfaWQiOiI1MmU4MGJmYS1iNDJjLTQ3ZDctOThiNS04YmI4N2M5MjYyMDkiLCJpc3MiOiJodHRwczovL3RlYW1zc28taXRzMDQudGVsdXMuY29tIiwiYXVkIjoia29uZyIsImlhdCI6MTcxMjA4NjQwNywiZXhwIjoxNzEyMDg2NzA3fQ.SYUykF79k_nwsYkpl0itCjo-5rLcR6ucckFNXEI53W5Ozcljx4NqXxEVUKuYrFvcCys5n1hboF1v5B_pyEp-Lz_UuY7hcfCXeywhVvTmwwYhg387dnIKZwcFG6Eep_EifuickxZLjHaJ4Kw3fPEr-5GldYaxgE2CwdlvIK38-a7jySshpZPUypbLrWraY0VnPnzR8hfcZjjWJMouniESmwzDtx4z4Ij13alHFK_1sknbP9MadB9v-NsGRG8zu1G2wqk_HV5QeQZY-ZcRRO4on_7qHQv1LvDU-Yh62pvxOJXJUWVFtI3hYZHRiYVcy8LM2n_2vlEUXU5OJF7aDDhSJg
+1 &gt; Host: apigw-st.tsl.telus.com
+1 &gt; Connection: Keep-Alive
+1 &gt; User-Agent: Apache-HttpClient/4.5.13 (Java/11.0.20)
+1 &gt; Accept-Encoding: gzip,deflate
+
+
+12:33:28.556 response time in milliseconds: 141
+1 &lt; 200
+1 &lt; Content-Type: application/json;charset=utf-8
+1 &lt; Transfer-Encoding: chunked
+1 &lt; Connection: keep-alive
+1 &lt; x-content-type-options: nosniff
+1 &lt; x-xss-protection: 1; mode=block
+1 &lt; cache-control: no-cache, no-store, max-age=0, must-revalidate
+1 &lt; pragma: no-cache
+1 &lt; expires: 0
+1 &lt; strict-transport-security: max-age=31536000 ; includeSubDomains
+1 &lt; x-frame-options: DENY
+1 &lt; date: Tue, 02 Apr 2024 19:33:28 GMT
+1 &lt; kong-request-id: 23f3457a-fb48-4946-8409-a2211b8d6370#733
+1 &lt; vary: Origin
+1 &lt; vary: Origin
+1 &lt; x-kong-upstream-latency: 68
+1 &lt; x-kong-proxy-latency: 2
+1 &lt; via: kong/2.8.2.3-enterprise-edition
+{&quot;searchType&quot;:&quot;BAN&quot;,&quot;searchValue&quot;:&quot;ban=71011963&quot;,&quot;accountList&quot;:[{&quot;customerId&quot;:null,&quot;foundByContactSearch&quot;:false,&quot;accountMatchAccuracy&quot;:100,&quot;billingName&quot;:{&quot;firstName&quot;:null,&quot;lastName&quot;:&quot;FARA&quot;,&quot;middleInitial&quot;:null},&quot;billingAccountNum&quot;:&quot;71011963&quot;,&quot;checkDigit&quot;:&quot;NA&quot;,&quot;state&quot;:&quot;active&quot;,&quot;domain&quot;:&quot;wireless&quot;,&quot;accountTypeCd&quot;:&quot;C&quot;,&quot;accountSubTypeCd&quot;:&quot;N&quot;,&quot;currentBalance&quot;:0.0,&quot;brand&quot;:&quot;telus&quot;,&quot;businessUnit&quot;:&quot;corp&quot;,&quot;accountTags&quot;:[],&quot;banSegmentCd&quot;:&quot;TBSO&quot;,&quot;banSubSegmentCd&quot;:&quot;BPR&quot;,&quot;creditClass&quot;:null,&quot;statusActivityReasonCd&quot;:&quot;CA&quot;,&quot;hotlineInd&quot;:false,&quot;delinquentInd&quot;:false,&quot;riskIndicatorCode&quot;:null,&quot;customerValueSegment&quot;:&quot;NA&quot;,&quot;languageCd&quot;:&quot;EN&quot;,&quot;billingType&quot;:&quot;postpaid&quot;,&quot;collectionStatusCd&quot;:null,&quot;accountStatusDt&quot;:&quot;2023-06-19T06:00:00Z&quot;,&quot;accountStartDt&quot;:&quot;2023-06-19T06:00:00Z&quot;,&quot;pin&quot;:&quot;1234&quot;,&quot;paymentMethodInfo&quot;:{&quot;paymentMethodCd&quot;:&quot;R&quot;,&quot;creditCardTypeCd&quot;:null,&quot;creditCardFirst6Txt&quot;:null,&quot;creditCardLast4Txt&quot;:null,&quot;creditCardMonthTxt&quot;:null,&quot;creditCardYearTxt&quot;:null,&quot;bankCodeTxt&quot;:null,&quot;bankAccountTxt&quot;:null,&quot;bankTransitNumTxt&quot;:null},&quot;billingInfo&quot;:{&quot;endDt&quot;:null,&quot;startDt&quot;:null,&quot;daysElapsed&quot;:0,&quot;daysInCycle&quot;:0,&quot;billCycleCd&quot;:&quot;44&quot;,&quot;ebillNotifyMethod&quot;:&quot;8&quot;,&quot;ebillNotifyPhoneNum&quot;:&quot;NA&quot;,&quot;ebillNotifyEmail&quot;:&quot;NA&quot;},&quot;billingAddress&quot;:null,&quot;contactInfo&quot;:{&quot;emailList&quot;:[&quot;email@gmail.com&quot;],&quot;phoneNumberInfoList&quot;:[{&quot;type&quot;:&quot;HOME&quot;,&quot;phoneNum&quot;:null},{&quot;type&quot;:&quot;CONTACT&quot;,&quot;phoneNum&quot;:&quot;9087654246&quot;},{&quot;type&quot;:&quot;BUSINESS&quot;,&quot;phoneNum&quot;:&quot;9087654246&quot;}]},&quot;activeSubscriberCt&quot;:1,&quot;suspendedSubscriberCt&quot;:0,&quot;cancelledSubscriberCt&quot;:1,&quot;productSearchStatus&quot;:&quot;notDone&quot;,&quot;products&quot;:null}],&quot;wirelessAccountFound&quot;:true,&quot;homeAccountFound&quot;:false,&quot;securityAccountFound&quot;:false,&quot;telusQuebecAccountFound&quot;:false,&quot;hasMultipleAccountOrSubscriber&quot;:false,&quot;hasResidentialAndBusinessAccount&quot;:false}
+</div>   
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.55">
+      <div class="step-ref passed">55</div>
+      
+      <div class="step-cell passed">
+        <span>Then</span>&nbsp;<span>status 200</span>
+      </div>
+    </div>
+    <div class="time-cell passed">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.57">
+      <div class="step-ref passed">57</div>
+      
+      <div class="step-cell passed">
+        <span>And</span>&nbsp;<span>match response.accountList[*].accountTypeCd == [&quot;C&quot;]</span>
+      </div>
+    </div>
+    <div class="time-cell passed">1</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="1.58">
+      <div class="step-ref failed">58</div>
+      
+      <div class="step-cell failed">
+        <span>And</span>&nbsp;<span>match response.accountList[*].state == [&quot;cancelled&quot;]</span>
+      </div>
+    </div>
+    <div class="time-cell failed">2</div>
+  </div>
+
+   
+  
+  
+
+  
+
+  <div class="preformatted" data-parent="1.58">12:33:28.563 classpath:feature/CCE_Corporate_BAN.feature:58
+And match response.accountList[*].state == [&quot;cancelled&quot;]
+match failed: EQUALS
+  $ | not equal | array match failed at index 0 (LIST:LIST)
+  [&quot;active&quot;]
+  [&quot;cancelled&quot;]
+
+    $[0] | not equal (STRING:STRING)
+    &#39;active&#39;
+    &#39;cancelled&#39;
+
+classpath:feature/CCE_Corporate_BAN.feature:58
+</div>   
+
+  
+
+</div>
+</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+

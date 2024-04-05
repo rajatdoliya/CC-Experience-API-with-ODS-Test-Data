@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Karate Timeline</title>
+    <style>
+      body, html { font-family: arial, sans-serif; font-size: 11pt; }
+      #visualization { box-sizing: border-box; width: 100%; height: 300px; }
+      .vis-item.failed { background-color: #F2928C; }
+      .page-heading { padding: 0.5em; margin-bottom: 0.5em; background-color: lightcyan; border: 1px solid gray; }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.js"></script>    
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.21.0/vis.min.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="page-heading">
+      <a href="karate-summary.html">Summary</a>
+    </div>     
+    <div id="visualization"></div>
+    <script>
+var groups = [{"content":"pool-1-thread-1","id":1},{"content":"pool-1-thread-2","id":2},{"content":"pool-1-thread-3","id":3},{"content":"pool-1-thread-4","id":4},{"content":"pool-1-thread-5","id":5}];
+var items = [{"id":1,"group":1,"content":"feature\/Consumer[1.1:40]","start":1712260768010,"end":1712260768583,"title":"feature\/Consumer[1.1:40] 12:59:28.010-12:59:28.583 TC001_CCCI_API_GET_Consumer_TN_BU R Accounts_200","className":"failed"},{"id":2,"group":2,"content":"feature\/Consumer[2.1:65]","start":1712260768159,"end":1712260768542,"title":"feature\/Consumer[2.1:65] 12:59:28.159-12:59:28.542 TC002_CCCI_API_GET_WLS_RES_Consumer_suspended_200","className":"failed"},{"id":3,"group":3,"content":"feature\/Consumer[2.2:65]","start":1712260768128,"end":1712260768542,"title":"feature\/Consumer[2.2:65] 12:59:28.128-12:59:28.542 TC002_CCCI_API_GET_WLS_RES_Consumer_suspended_200","className":"failed"},{"id":4,"group":4,"content":"feature\/Consumer[2.3:65]","start":1712260768128,"end":1712260768598,"title":"feature\/Consumer[2.3:65] 12:59:28.128-12:59:28.598 TC002_CCCI_API_GET_WLS_RES_Consumer_suspended_200","className":"failed"},{"id":5,"group":5,"content":"feature\/Consumer[2.4:65]","start":1712260768131,"end":1712260768583,"title":"feature\/Consumer[2.4:65] 12:59:28.131-12:59:28.583 TC002_CCCI_API_GET_WLS_RES_Consumer_suspended_200","className":"failed"},{"id":6,"group":3,"content":"feature\/Consumer[2.5:65]","start":1712260768552,"end":1712260768739,"title":"feature\/Consumer[2.5:65] 12:59:28.552-12:59:28.739 TC002_CCCI_API_GET_WLS_RES_Consumer_suspended_200","className":"failed"},{"id":7,"group":2,"content":"feature\/Consumer[3.1:77]","start":1712260768552,"end":1712260768745,"title":"feature\/Consumer[3.1:77] 12:59:28.552-12:59:28.745 TC003_Get_CCE_Ban_Info","className":"failed"},{"id":8,"group":5,"content":"feature\/Consumer[4.1:90]","start":1712260768592,"end":1712260768989,"title":"feature\/Consumer[4.1:90] 12:59:28.592-12:59:28.989 TC004_CCCI_API_GET_Cods_tn_Consumer_customeraccount_200"},{"id":9,"group":1,"content":"feature\/Consumer[5.1:103]","start":1712260768592,"end":1712260768923,"title":"feature\/Consumer[5.1:103] 12:59:28.592-12:59:28.923 TC005_Get_CCE_tn_BAN_Cods_Consumer_customeraccount_Info"},{"id":10,"group":4,"content":"feature\/Consumer[6.1:115]","start":1712260768607,"end":1712260768923,"title":"feature\/Consumer[6.1:115] 12:59:28.607-12:59:28.923 TC006_Get_CCE_Ban_Cods_customer_consumer_Info"},{"id":11,"group":3,"content":"feature\/Consumer[7.1:127]","start":1712260768748,"end":1712260769101,"title":"feature\/Consumer[7.1:127] 12:59:28.748-12:59:29.101 TC007_Get_CCE_Ban_kb_customer_consumer_Info","className":"failed"},{"id":12,"group":2,"content":"feature\/Consumer[8.1:140]","start":1712260768754,"end":1712260768926,"title":"feature\/Consumer[8.1:140] 12:59:28.754-12:59:28.926 TC008_CCCI_API_GET_kb_tn_Consumer_customeraccount_200","className":"failed"},{"id":13,"group":1,"content":"feature\/Consumer[9.1:153]","start":1712260768932,"end":1712260769117,"title":"feature\/Consumer[9.1:153] 12:59:28.932-12:59:29.117 TC009_CCCI_API_GET_kb_tn_ban_Consumer_customeraccount_200","className":"failed"}];
+</script>
+    <script>
+      var container = document.getElementById('visualization');
+      var timeline = new vis.Timeline(container);
+      timeline.setOptions({groupOrder: 'content'});
+      timeline.setGroups(new vis.DataSet(groups));
+      timeline.setItems(new vis.DataSet(items));
+    </script>
+  </body>
+</html>
